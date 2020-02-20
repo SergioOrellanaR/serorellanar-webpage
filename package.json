@@ -1,0 +1,27 @@
+{
+  "name": "mydevwebpage",
+  "version": "1.0.0",
+  "description": "Página web de desarrollador de Sergio Orellana Rey",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.0",
+    "nodemon": "^2.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "nodemon": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergioOrellanaR/serorellanar-webpage.git"
+  },
+  "author": "Sergio Orellana Rey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SergioOrellanaR/serorellanar-webpage/issues"
+  },
+  "homepage": "https://github.com/SergioOrellanaR/serorellanar-webpage#readme"
+}
