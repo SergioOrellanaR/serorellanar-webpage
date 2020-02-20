@@ -38,9 +38,9 @@ a {
   -webkit-transition: .3s all;
   -o-transition: .3s all;
   transition: .3s all;
-  color: #57d131; }
+  color: #343d8f; }
   a:hover, a:focus, a:active {
-    color: #4ebe2a;
+    color: #3d50fd;
     text-decoration: none; }
 
 .parent-nav-link-padding, .site-navbar .navbar-nav > li > a {
