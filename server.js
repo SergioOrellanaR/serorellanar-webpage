@@ -8,7 +8,7 @@ const app = express();
 const port = process.env.PORT  || 3000;
 
 app.use(express.static( __dirname + '/view'));
-
+app.set('env development');
 //View es un customfolder en hbs (En vez de "views")
 app.set('views', path.join(__dirname, '/view'));
 
