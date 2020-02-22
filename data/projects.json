@@ -7,9 +7,26 @@
 			"mainImageUrl": "",
 			"platforms": 
 			[
-				"Web",
-				"Android",
-				"iOS"
+				{
+					"name": "Chrome",
+					"icon": "https://img.icons8.com/color/100/000000/chrome--v1.png"
+				},
+				{
+					"name": "Firefox",
+					"icon": "https://img.icons8.com/color/100/000000/firefox.png"
+				},
+				{
+					"name": "Opera",
+					"icon": "https://img.icons8.com/color/100/000000/opera--v1.png"
+				},
+				{
+					"name": "Safari",
+					"icon": "https://img.icons8.com/color/100/000000/safari--v1.png"
+				},
+				{
+					"name": "Microsoft Edge",
+					"icon": "https://img.icons8.com/color/100/000000/ms-edge.png"
+				}
 			],
 			"projectDescription": "",
 			"secondaryImagesUrl": 
@@ -64,8 +81,14 @@
 			"mainImageUrl": "",
 			"platforms": 
 			[
-				"",
-				""
+				{
+					"name": "Android",
+					"icon": "https://img.icons8.com/color/100/000000/android-os.png"
+				},
+				{
+					"name": "iOS",
+					"icon": "https://img.icons8.com/color/100/000000/ios-logo.png"
+				}
 			],
 			"projectDescription": "",
 			"secondaryImagesUrl": 
@@ -112,8 +135,14 @@
 			"mainImageUrl": "",
 			"platforms": 
 			[
-				"",
-				""
+				{
+					"name": "Android",
+					"icon": "https://img.icons8.com/color/100/000000/android-os.png"
+				},
+				{
+					"name": "iOS",
+					"icon": "https://img.icons8.com/color/100/000000/ios-logo.png"
+				}
 			],
 			"projectDescription": "",
 			"secondaryImagesUrl": 
@@ -152,8 +181,10 @@
 			"mainImageUrl": "",
 			"platforms": 
 			[
-				"",
-				""
+				{
+					"name": "Windows",
+					"icon": "https://img.icons8.com/color/100/000000/windows-logo.png"
+				}
 			],
 			"projectDescription": "",
 			"secondaryImagesUrl": 
@@ -188,8 +219,22 @@
 			"mainImageUrl": "",
 			"platforms": 
 			[
-				"",
-				""
+				{
+					"name": "Windows",
+					"icon": "https://img.icons8.com/color/100/000000/windows-logo.png"
+				},
+				{
+					"name": "Linux",
+					"icon": "https://img.icons8.com/color/100/000000/linux.png"
+				},
+				{
+					"name": "Chrome",
+					"icon": "https://img.icons8.com/color/100/000000/chrome--v1.png"
+				},
+				{
+					"name": "Firefox",
+					"icon": "https://img.icons8.com/color/100/000000/firefox.png"
+				}
 			],
 			"projectDescription": "",
 			"secondaryImagesUrl": 
@@ -243,10 +288,7 @@
 			"completeName": "",
 			"mainImageUrl": "",
 			"platforms": 
-			[
-				"",
-				""
-			],
+			[],
 			"projectDescription": "",
 			"secondaryImagesUrl": 
 			[
@@ -269,7 +311,7 @@
 				},
 				{
 					"name": "Hibernate",
-					"icon": "images/hibernateLogo.png"
+					"icon": "images/hibernateLogo.jpg"
 				},
 				{
 					"name": "Postman",
