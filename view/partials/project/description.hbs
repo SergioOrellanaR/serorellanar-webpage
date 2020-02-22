@@ -1,7 +1,15 @@
 <br>
 description: {{ projectDescription }}
 <br>
-usedTechnologies: {{ usedTechnologies }}
+
+{{#each usedTechnologies}}
+
+
+<img src={{this.icon}} />
+<h4>{{this.name}}</h4>
+
+{{/each}}
+
 <br>
 credits: {{ credits }}
 <br>

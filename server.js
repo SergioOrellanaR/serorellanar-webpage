@@ -34,7 +34,6 @@ app.get('/project', (req, res) =>
     {
         const projectName = projectObject.projectName;
         const projectInformation = projectObject.projectInformation;
-        
         res.render('project', {
             projectName,
             projectCompleteName: projectInformation.completeName,
