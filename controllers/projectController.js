@@ -11,12 +11,10 @@ const isProjectNameValid = (projectName) =>
 {
     if(projectName != undefined && projectName in projects )
     {
-        console.log(true);
         return true;
     }
     else
     {
-        console.log(false);
         return false;
     }
 }
