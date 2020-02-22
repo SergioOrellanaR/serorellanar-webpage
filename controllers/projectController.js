@@ -1,35 +1,26 @@
 //TODO: projects = JSON object
+const fs = require('fs');
 
-const projects = {
-    thisWebPage: 'thisWebPage',
-    chilemergencias: 'chilemergencias',
-    humankindVirtue: 'humankindVirtue',
-    oss: 'oss',
-    lindaSonrisa: 'lindaSonrisa',
-    walmart: 'walmart'
-}
 
-const isProjectNameValid = (projectName) =>
+const rawData = fs.readFileSync('./data/projects.json', );
+const parsedProjects = JSON.parse(rawData);
+
+
+const searchProject = (projectName) =>
 {
-    if(projectName != undefined && projectName in projects )
+    var result = parsedProjects.filter(x => x.projectName === projectName);
+    // && projectName in projects 
+    if(projectName != undefined && result.length>0)
     {
-        return true;
+        return result[0];
     }
     else
     {
-        return false;
+        return null;
     }
 }
 
-const projectObject = (projectName) =>
-{
-    return "Imagen: " + projectName;
-}
-
-
 module.exports =
 {
-    projects,
-    isProjectNameValid,
-    projectObject
+    searchProject
 };

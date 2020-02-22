@@ -28,11 +28,23 @@ app.get('/', (req, res) =>
 app.get('/project', (req, res) =>
 {
     const projectName = req.query.name;
+    const projectObject = projects.searchProject(projectName);
 
-    if(projects.isProjectNameValid(projectName))
+    if(projectObject != null)
     {
+        const projectName = projectObject.projectName;
+        const projectInformation = projectObject.projectInformation;
+        
         res.render('project', {
-            projectName: projects.projectObject(projectName)
+            projectName,
+            projectCompleteName: projectInformation.completeName,
+            mainImageUrl: projectInformation.mainImageUrl,
+            platforms: projectInformation.platforms,
+            projectDescription: projectInformation.projectDescription,
+            secondaryImagesUrl: projectInformation.secondaryImagesUrl,
+            usedTechnologies: projectInformation.usedTechnologies,
+            credits: projectInformation.credits,
+            gitHubLink: projectInformation.gitHubLink
         });
     }
     else
