@@ -32,12 +32,7 @@ app.get('/project', (req, res) =>
     if(projects.isProjectNameValid(projectName))
     {
         res.render('project', {
-            projectName,
-            mainImageUrl: projects.mainImageUrl(projectName),
-            platform: projects.getPlatform(projectName),
-            description: projects.getProjectDescription(projectName),
-            secondaryImages: projects.getSecondaryImages(projectName),
-            credits: projects.getCredits(projectName)
+            projectName: projects.projectObject(projectName)
         });
     }
     else

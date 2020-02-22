@@ -1,3 +1,5 @@
+//TODO: projects = JSON object
+
 const projects = {
     thisWebPage: 'thisWebPage',
     chilemergencias: 'chilemergencias',
@@ -19,39 +21,15 @@ const isProjectNameValid = (projectName) =>
     }
 }
 
-const mainImageUrl = (projectName) =>
+const projectObject = (projectName) =>
 {
     return "Imagen: " + projectName;
 }
-
-const getPlatform = (projectName) =>
-{
-    return "Plataforma: " + projectName;
-}
-
-const getProjectDescription = (projectName) =>
-{
-    return "Descripción:  " + projectName;
-}
-
-const getSecondaryImages = (projectName) =>
-{
-    return "Imágenes secundarias: " + projectName;
-}
-
-const getCredits = (projectName) => {
-    return "Créditos: "+ projectName;
-}
-
 
 
 module.exports =
 {
     projects,
     isProjectNameValid,
-    mainImageUrl,
-    getPlatform,
-    getProjectDescription,
-    getSecondaryImages,
-    getCredits
+    projectObject
 };
