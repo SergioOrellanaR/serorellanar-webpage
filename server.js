@@ -36,7 +36,8 @@ app.get('/project', (req, res) =>
             mainImageUrl: projects.mainImageUrl(projectName),
             platform: projects.getPlatform(projectName),
             description: projects.getProjectDescription(projectName),
-            secondaryImages: projects.getSecondaryImages(projectName)
+            secondaryImages: projects.getSecondaryImages(projectName),
+            credits: projects.getCredits(projectName)
         });
     }
     else

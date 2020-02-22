@@ -4,12 +4,11 @@ const projects = {
     humankindVirtue: 'humankindVirtue',
     oss: 'oss',
     lindaSonrisa: 'lindaSonrisa',
-    process: 'process'
+    walmart: 'walmart'
 }
 
 const isProjectNameValid = (projectName) =>
 {
-    console.log(projectName);
     if(projectName != undefined && projectName in projects )
     {
         console.log(true);
@@ -42,6 +41,11 @@ const getSecondaryImages = (projectName) =>
     return "Imágenes secundarias: " + projectName;
 }
 
+const getCredits = (projectName) => {
+    return "Créditos: "+ projectName;
+}
+
+
 
 module.exports =
 {
@@ -50,5 +54,6 @@ module.exports =
     mainImageUrl,
     getPlatform,
     getProjectDescription,
-    getSecondaryImages
+    getSecondaryImages,
+    getCredits
 };
