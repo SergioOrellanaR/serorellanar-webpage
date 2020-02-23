@@ -11,9 +11,15 @@ const port = getPort();
 
 function getPort()
 {
-
+    //Si es local o Heroku
+    if(process.env.COMPUTERNAME === 'DESKTOP-C0V2FF2')
+    {
         return 3000;
-
+    }
+    else
+    {
+        return 80;
+    }
 }
 
 app.use(express.static( __dirname + '/view'));
@@ -29,6 +35,7 @@ app.set('view engine', 'hbs');
 
 app.get('/', (req, res) =>
 {
+    console.log(process.env);
     res.render('index');
 });
 
@@ -67,5 +74,5 @@ app.get('*', function(req, res){
 
 
 app.listen(port, () => {
-    console.log('Escuchando peticiones en el puerto',port);
+    console.log('Listening on port:',port);
 })
