@@ -6,7 +6,8 @@ const projects = require('./controllers/projectController');
 
 const app = express();
 
-const port = 80;
+//dev vs production
+const port = process.env.COMPUTERNAME === 'DESKTOP-C0V2FF2' ? 3000 : 80;
 
 app.use(express.static( __dirname + '/view'));
 app.set('env development');
@@ -22,7 +23,6 @@ app.set('view engine', 'hbs');
 app.get('/', (req, res) =>
 {
     res.render('index');
-    
 });
 
 app.get('/project', (req, res) =>
@@ -60,5 +60,5 @@ app.get('*', function(req, res){
 
 
 app.listen(port, () => {
-    console.log('Escuchando peticiones en el puerto ',port);
+    console.log('Escuchando peticiones en el puerto',port);
 })
