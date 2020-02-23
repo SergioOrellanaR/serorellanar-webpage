@@ -7,7 +7,10 @@ const projects = require('./controllers/projectController');
 const app = express();
 
 //dev vs production
-const port = () => {
+const port = getPort();
+
+function getPort()
+{
     //Si es local o Heroku
     if(process.env.COMPUTERNAME === 'DESKTOP-C0V2FF2' || process.env.NODE_ENV)
     {
