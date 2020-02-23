@@ -11,14 +11,14 @@ const port = getPort();
 
 function getPort()
 {
-    //Si es local o Heroku
-    if(process.env.COMPUTERNAME === 'DESKTOP-C0V2FF2')
+    //Si es producción vs dev
+    if(process.env.PWD === '/home/workspace/serorellanar-webpage')
     {
-        return 3000;
+        return 80;
     }
     else
     {
-        return 80;
+        return 3000;
     }
 }
 
@@ -35,7 +35,6 @@ app.set('view engine', 'hbs');
 
 app.get('/', (req, res) =>
 {
-    console.log(process.env);
     res.render('index');
 });
 
