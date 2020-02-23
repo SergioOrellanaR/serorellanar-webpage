@@ -32,12 +32,12 @@
 
 <script src="js/custom.js"></script>
 <script src="js/swiper.min.js"></script>
-<script src="js/google-map.js"></script>
 <script>
     var swiper = new Swiper('.swiper-container', {
         effect: 'coverflow',
         grabCursor: true,
         centeredSlides: true,
+        loop: true,
         slidesPerView: 'auto',
         coverflowEffect: {
             rotate: 50,
@@ -49,6 +49,10 @@
         pagination: {
             el: '.swiper-pagination',
         },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
     });
 </script>
 </body>
