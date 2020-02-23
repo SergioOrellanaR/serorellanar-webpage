@@ -4,7 +4,12 @@
 		"projectInformation": 
 		{
 			"completeName": "www.serorellanar.cl",
+			"projectDescription": "My own personal webpage, this is like my baby and the first web app that i've sent to production environment, every module is made with dedication and it's always updated!. This is that internet corner that totally belongs me and even the home page animation is made by me, i hope you're having a great time watching this and if you need some awesome webpage, you already know how to contact me.",
+			"mobileImages": false,
 			"mainImageUrl": "images/projects/thisWebPage/home.png",
+			"downloadServices": 
+			[
+			],
 			"platforms": 
 			[
 				{
@@ -28,7 +33,6 @@
 					"icon": "https://img.icons8.com/color/100/000000/ms-edge.png"
 				}
 			],
-			"projectDescription": "My own personal webpage, this is like my baby and the first web app that i've sent to production enviroment, every module is made with dedication and it's always updated!. This is that internet corner that totally belongs me and even the home animation is made by me, i hope you're having a great time watching this and if you need some awesome webpage, you already know how to contact me.",
 			"secondaryImagesUrl": 
 			[
 				"images/projects/thisWebPage/home.png",
@@ -91,7 +95,17 @@
 		"projectInformation": 
 		{
 			"completeName": "Chilemergencias",
+			"projectDescription": "This application shows in real time the nearest emergency service buildings considering the user's position. Chilemergencias(2019) is a break trending application on Chile, and the first of its type on the country. This application was challenging because the chilean government at the date of 2019 doesnt have the information (or at least is not public) of the urgency services location on the country, so the information gathering had to be manual, with more than 1700 different buildings with all its data from all across the country. This mobile application was developed with Dart and Flutter using MapBox SDK and Google maps for routes purposes. This application is free and doesnt contains ads, it's actually available on Play store and earlier than later on App Store.",
 			"mainImageUrl": "images/projects/chilemergencias/MainImage.png",
+			"mobileImages": true,
+			"downloadServices": 
+			[
+				{
+					"name": "Google Play",
+					"icon": "https://img.icons8.com/color/100/000000/google-play.png",
+					"url": "https://play.google.com/store/apps/details?id=com.serorellanar.chilemergencias"
+				}
+			],
 			"platforms": 
 			[
 				{
@@ -103,11 +117,15 @@
 					"icon": "https://img.icons8.com/color/100/000000/ios-logo.png"
 				}
 			],
-			"projectDescription": "",
 			"secondaryImagesUrl": 
 			[
-				"",
-				""
+				"images/projects/chilemergencias/locationRequest.png",
+				"images/projects/chilemergencias/locationArica.png",
+				"images/projects/chilemergencias/closestBombero.png",
+				"images/projects/chilemergencias/closestUrgencia.png",
+				"images/projects/chilemergencias/howToArrive.png",
+				"images/projects/chilemergencias/information.png",
+				"images/projects/chilemergencias/logo.png"
 			],
 			"usedTechnologies":
 			[
@@ -147,7 +165,17 @@
 		"projectInformation": 
 		{
 			"completeName": "HumanKind Virtue",
+			"projectDescription": "HumankindVirtue(2020) is a mobile application that helps players to play easier and faster (when playing on real life) the card game called 'HumanKind', this project borns from the need to play faster and to avoid garbage collecting, this because every game in average 4 disposable carton are lost, so by automation this functionality was replaced with the app. HumanKind Virtue counts with life counter, resource counting and multiple personalization (paid) items. This application is free and doesnt contains ads, it's actually available on Play store and earlier than later on App Store.",
 			"mainImageUrl": "",
+			"mobileImages": true,
+			"downloadServices": 
+			[
+				{
+					"name": "Google Play",
+					"icon": "https://img.icons8.com/color/100/000000/google-play.png",
+					"url": "https://play.google.com/store/apps/details?id=com.serorellanar.chilemergencias"
+				}
+			],
 			"platforms": 
 			[
 				{
@@ -159,7 +187,6 @@
 					"icon": "https://img.icons8.com/color/100/000000/ios-logo.png"
 				}
 			],
-			"projectDescription": "",
 			"secondaryImagesUrl": 
 			[
 				"",
@@ -195,7 +222,12 @@
 		"projectInformation": 
 		{
 			"completeName": "Overwatch Server Selector",
+			"projectDescription": "",
 			"mainImageUrl": "",
+			"mobileImages": false,
+			"downloadServices": 
+			[
+			],
 			"platforms": 
 			[
 				{
@@ -203,7 +235,6 @@
 					"icon": "https://img.icons8.com/color/100/000000/windows-logo.png"
 				}
 			],
-			"projectDescription": "",
 			"secondaryImagesUrl": 
 			[
 				"",
@@ -235,7 +266,12 @@
 		"projectInformation": 
 		{
 			"completeName": "Linda Sonrisa",
+			"projectDescription": "",
 			"mainImageUrl": "",
+			"mobileImages": false,
+			"downloadServices": 
+			[
+			],
 			"platforms": 
 			[
 				{
@@ -315,10 +351,14 @@
 		"projectInformation": 
 		{
 			"completeName": "REST Tarjeta Lider BCI",
+			"projectDescription": "",
 			"mainImageUrl": "",
+			"mobileImages": true,
+			"downloadServices": 
+			[
+			],
 			"platforms": 
 			[],
-			"projectDescription": "",
 			"secondaryImagesUrl": 
 			[
 				"",

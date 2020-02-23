@@ -39,6 +39,8 @@ app.get('/project', (req, res) =>
             projectCompleteName: projectInformation.completeName,
             mainImageUrl: projectInformation.mainImageUrl,
             platforms: projectInformation.platforms,
+            downloadServices: projectInformation.downloadServices,
+            isMobileImage: projectInformation.isMobileImage,
             projectDescription: projectInformation.projectDescription,
             secondaryImagesUrl: projectInformation.secondaryImagesUrl,
             usedTechnologies: projectInformation.usedTechnologies,

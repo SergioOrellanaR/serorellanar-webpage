@@ -1,20 +1,18 @@
 {{#if platforms}}
 <section class="site-section" id="section-platforms">
+    <div class="section-heading text-center col-md-12">
+        <h2>It <strong>runs on</strong></h2>
+    </div>
     <div class="container">
-        <div class="section-heading text-center col-md-12">
-            <h2>It <strong>runs on</strong></h2>
-        </div>
-        <div class="container">
-            <div class="row">
-                {{#each platforms}}
-                <div class="col-sm col-sm text-center mb-5">
-                    <span class="icon">
-                        <span><img src={{this.icon}} /></span>
-                    </span>
-                    <h6 class="mb-6">{{this.name}}</h6>
-                </div>
-                {{/each}}
+        <div class="row">
+            {{#each platforms}}
+            <div class="col-sm col-sm text-center mb-5">
+                <span class="icon">
+                    <span><img src={{this.icon}} /></span>
+                </span>
+                <h6 class="mb-6">{{this.name}}</h6>
             </div>
+            {{/each}}
         </div>
     </div>
 </section>
