@@ -11,15 +11,9 @@ const port = getPort();
 
 function getPort()
 {
-    //Si es local o Heroku
-    if(process.env.COMPUTERNAME === 'DESKTOP-C0V2FF2' || process.env.NODE_ENV)
-    {
+
         return 3000;
-    }
-    else
-    {
-        return 80;
-    }
+
 }
 
 app.use(express.static( __dirname + '/view'));
