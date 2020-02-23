@@ -39,6 +39,10 @@
         centeredSlides: true,
         loop: true,
         slidesPerView: 'auto',
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: true,
+        },
         coverflowEffect: {
             rotate: 50,
             stretch: 0,
@@ -48,6 +52,8 @@
         },
         pagination: {
             el: '.swiper-pagination',
+            dynamicBullets: true,
+            clickable: true
         },
         navigation: {
             nextEl: '.swiper-button-next',

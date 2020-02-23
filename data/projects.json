@@ -3,8 +3,8 @@
 		"projectName": "thisWebPage",
 		"projectInformation": 
 		{
-			"completeName": "serorellanar.cl",
-			"mainImageUrl": "",
+			"completeName": "www.serorellanar.cl",
+			"mainImageUrl": "images/projects/thisWebPage/home.png",
 			"platforms": 
 			[
 				{
@@ -28,11 +28,22 @@
 					"icon": "https://img.icons8.com/color/100/000000/ms-edge.png"
 				}
 			],
-			"projectDescription": "",
+			"projectDescription": "My own personal webpage, this is like my baby and the first web app that i've sent to production enviroment, every module is made with dedication and it's always updated!. This is that internet corner that totally belongs me and even the home animation is made by me, i hope you're having a great time watching this and if you need some awesome webpage, you already know how to contact me.",
 			"secondaryImagesUrl": 
 			[
-				"",
-				""
+				"images/projects/thisWebPage/home.png",
+				"images/projects/thisWebPage/aboutMe.png",
+				"images/projects/thisWebPage/c1.png",
+				"images/projects/thisWebPage/ttiww.png",
+				"images/projects/thisWebPage/specialties.png",
+				"images/projects/thisWebPage/portfolio.png",
+				"images/projects/thisWebPage/OrellanaLogo.png",
+				"images/projects/thisWebPage/project.png",
+				"images/projects/thisWebPage/platforms.png",
+				"images/projects/thisWebPage/credits.png",
+				"images/projects/thisWebPage/imageGallery.png",
+				"images/projects/thisWebPage/repositoryUrl.png",
+				"images/projects/thisWebPage/c2.png"
 			],
 			"usedTechnologies":
 			[

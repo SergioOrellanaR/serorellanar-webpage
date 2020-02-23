@@ -1,3 +1,4 @@
+{{#if secondaryImagesUrl}}
 <section class="site-section" id="section-images">
     <div class="container">
         <div class="row">
@@ -9,28 +10,18 @@
         <!-- Swiper -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image:url(images/p1.jpg)"></div>
-                <div class="swiper-slide" style="background-image:url(images/p2.jpg)"></div>
-                <div class="swiper-slide" style="background-image:url(images/p3.jpg)"></div>
-                <div class="swiper-slide" style="background-image:url(images/p4.jpg)"></div>
-                <div class="swiper-slide" style="background-image:url(images/p5.jpg)"></div>
-                <div class="swiper-slide" style="background-image:url(images/p6.jpg)"></div>
+                {{#each secondaryImagesUrl}}
+                <div class="swiper-slide" style="background-image:url({{this}})"></div>
+                {{/each}}
             </div>
-            <!-- Add Pagination -->
+
             <div class="swiper-pagination">
             </div>
 
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
-
-
-
-    </div>
-
-
-
-
-
     </div>
 </section>
+
+{{/if}}
