@@ -67,10 +67,9 @@
 			],
 			"credits":
 			[
-				"",
-				""
+				"Creator, owner and developer: Sergio Orellana Rey"
 			],
-			"gitHubLink": ""
+			"gitHubLink": "https://github.com/SergioOrellanaR/serorellanar-webpage"
 		}
 	},
 	{
@@ -78,7 +77,7 @@
 		"projectInformation": 
 		{
 			"completeName": "Chilemergencias",
-			"mainImageUrl": "",
+			"mainImageUrl": "images/projects/chilemergencias/MainImage.png",
 			"platforms": 
 			[
 				{
@@ -121,17 +120,16 @@
 			],
 			"credits":
 			[
-				"",
-				""
+				"Creator, owner and developer: Sergio Orellana Rey"
 			],
-			"gitHubLink": ""
+			"gitHubLink": "https://github.com/SergioOrellanaR/chilemergencias"
 		}
 	},
 	{
 		"projectName": "humankindVirtue",
 		"projectInformation": 
 		{
-			"completeName": "",
+			"completeName": "HumanKind Virtue",
 			"mainImageUrl": "",
 			"platforms": 
 			[
@@ -167,17 +165,16 @@
 			],
 			"credits":
 			[
-				"",
-				""
+				"Creator, owner and developer: Sergio Orellana Rey"
 			],
-			"gitHubLink": ""
+			"gitHubLink": "https://github.com/SergioOrellanaR/humankind-Virtue"
 		}
 	},
 	{
 		"projectName": "oss",
 		"projectInformation": 
 		{
-			"completeName": "",
+			"completeName": "Overwatch Server Selector",
 			"mainImageUrl": "",
 			"platforms": 
 			[
@@ -205,17 +202,16 @@
 			],
 			"credits":
 			[
-				"",
-				""
+				"Creator, owner and developer: Sergio Orellana Rey"
 			],
-			"gitHubLink": ""
+			"gitHubLink": "https://github.com/SergioOrellanaR/Oss"
 		}
 	},
 	{
 		"projectName": "lindaSonrisa",
 		"projectInformation": 
 		{
-			"completeName": "",
+			"completeName": "Linda Sonrisa",
 			"mainImageUrl": "",
 			"platforms": 
 			[
@@ -238,6 +234,10 @@
 			],
 			"projectDescription": "",
 			"secondaryImagesUrl": 
+			[
+				
+			],
+			"usedTechnologies":
 			[
 				{
 					"name": "C#",
@@ -267,25 +267,22 @@
 					"name": "Bootstrap",
 					"icon": "https://img.icons8.com/color/100/000000/bootstrap.png"
 				}
-			],
-			"usedTechnologies":
-			[
-				"",
-				""
+
 			],
 			"credits":
 			[
-				"",
-				""
+				"Software Architect, Database modeler, C# Backend developer: Sergio Orellana Rey",
+				"Frontend Web developer: Brayan Méndez Fuenzalida",
+				"Desktop Frontend and Backend developer, Database admin: Marco Silva"
 			],
-			"gitHubLink": ""
+			"gitHubLink": "https://github.com/SergioOrellanaR/Linda-Sonrisa-WebApp-Portafolio-Analista-"
 		}
 	},
 	{
 		"projectName": "walmart",
 		"projectInformation": 
 		{
-			"completeName": "",
+			"completeName": "REST Tarjeta Lider BCI",
 			"mainImageUrl": "",
 			"platforms": 
 			[],
@@ -320,10 +317,12 @@
 			],
 			"credits":
 			[
-				"",
-				""
+				"Project Manager: Roberto Vargas",
+				"Software Architect: Daniel Soto",
+				"Backend developer: Sergio Orellana Rey",
+				"Backend developer: Brayan Méndez Fuenzalida"
 			],
-			"gitHubLink": ""
+			"gitHubLink": null
 		}
 	}
 ]
