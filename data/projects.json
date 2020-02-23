@@ -230,8 +230,8 @@
 		"projectInformation": 
 		{
 			"completeName": "Overwatch Server Selector",
-			"projectDescription": "",
-			"mainImageUrl": "",
+			"projectDescription": "Overwatch (Blizzard game) doesn't have a in game server selector, this causes some limitations when playing, for example, if a player wants to play with someone who is far, he will be play on a very far server instead of an intermediate one. There's some internet companys that have better connections with one country than other, and other similar cases. This application works blocking IP using firewall rules, but it is discontinued right now because as Blizzard uses amazon-web-services to host his game, the possible IP are very dynamic. Even in that situation i think with some research work the project may back if we discover IP ranges of possible servers.",
+			"mainImageUrl": "images/projects/oss/main.png",
 			"mobileImages": false,
 			"downloadServices": 
 			[
@@ -245,8 +245,11 @@
 			],
 			"secondaryImagesUrl": 
 			[
-				"",
-				""
+				"images/projects/oss/main.png",
+				"images/projects/oss/c1.png",
+				"images/projects/oss/1.png",
+				"images/projects/oss/2.png",
+				"images/projects/oss/3.png"
 			],
 			"usedTechnologies":
 			[
@@ -274,8 +277,8 @@
 		"projectInformation": 
 		{
 			"completeName": "Linda Sonrisa",
-			"projectDescription": "",
-			"mainImageUrl": "",
+			"projectDescription": "Linda Sonrisa application (2018, called SAGCO too) was made by a group of (back then) students for a fictional dental clinic, this robust application have two different interfaces. Web interface developed on C# was destinated to clients, on this page people can book an appointment with a dentist selecting service, day and hour (only if it is available), this page counts with Register, Login, Book an appointment, accredit socioeconomic status and (only for admin) report services of data. The other interface is a desktop application developed on Java, this is used by all the different dentistry employee with different roles.",
+			"mainImageUrl": "images/projects/lindaSonrisa/logo.png",
 			"mobileImages": false,
 			"downloadServices": 
 			[
@@ -299,9 +302,18 @@
 					"icon": "https://img.icons8.com/color/100/000000/firefox.png"
 				}
 			],
-			"projectDescription": "",
 			"secondaryImagesUrl": 
 			[
+				"images/projects/lindaSonrisa/c1.png",
+				"images/projects/lindaSonrisa/2.png",
+				"images/projects/lindaSonrisa/3.png",
+				"images/projects/lindaSonrisa/4.png",
+				"images/projects/lindaSonrisa/5.png",
+				"images/projects/lindaSonrisa/6.png",
+				"images/projects/lindaSonrisa/7.png",
+				"images/projects/lindaSonrisa/8.png",
+				"images/projects/lindaSonrisa/9.png",
+				"images/projects/lindaSonrisa/logo.png"
 				
 			],
 			"usedTechnologies":
@@ -348,7 +360,7 @@
 				},
 				{
 					"name": "Marco Silva",
-					"roles": "Desktop Frontend and Backend developer, Database admin"
+					"roles": "Desktop Frontend and Backend developer, Database admin, Artist designer"
 				}
 			],
 			"gitHubLink": "https://github.com/SergioOrellanaR/Linda-Sonrisa-WebApp-Portafolio-Analista-"
@@ -359,18 +371,32 @@
 		"projectInformation": 
 		{
 			"completeName": "REST Tarjeta Lider BCI",
-			"projectDescription": "",
-			"mainImageUrl": "",
+			"projectDescription": "With more than 100000 downloads \"Tarjeta Lider BCI\" is a application that allows user to interact with walmart financial services on Chile, this application was not created by me, this applications belongs to a bigger team back on 2018 when i worked on \"Taisa tecnología\", i was responsible for developing some REST services that were planned by my bosses of that time.",
+			"mainImageUrl": "images/projects/walmart/logo.png",
 			"mobileImages": true,
 			"downloadServices": 
 			[
+				{
+					"name": "Google Play",
+					"icon": "https://img.icons8.com/color/100/000000/google-play.png",
+					"url": "https://play.google.com/store/apps/details?id=cl.walmart.ssff"
+				},
+				{
+					"name": "App Store",
+					"icon": "https://img.icons8.com/color/100/000000/apple-app-store--v1.png",
+					"url": "https://apps.apple.com/cl/app/tarjeta-lider-bci/id1441458706"
+				}
 			],
 			"platforms": 
 			[],
 			"secondaryImagesUrl": 
 			[
-				"",
-				""
+				"images/projects/walmart/c1.png",
+				"images/projects/walmart/1.png",
+				"images/projects/walmart/2.png",
+				"images/projects/walmart/3.png",
+				"images/projects/walmart/c2.jpg",
+				"images/projects/walmart/logo.png"
 			],
 			"usedTechnologies":
 			[
