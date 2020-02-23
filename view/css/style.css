@@ -613,34 +613,6 @@ a {
     font-size: 14px;
     color: #666666; }
 
-
-  #scrollableCarousel {
-      width: 100%;
-      height: 150px;
-      background-color: #ff0000;
-      
-      overflow: visible;
-      white-space:nowrap;
-  }
-  
-  #scrollableCarousel .slide {
-      display: inline-block;
-  }
-
-
-  
-  html, body {
-    position: relative;
-    height: 100%;
-  }
-  body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color:#000;
-    margin: 0;
-    padding: 0;
-  }
   .swiper-container {
     width: 100%;
     height: 100%;

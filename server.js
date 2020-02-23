@@ -27,8 +27,8 @@ app.get('/', (req, res) =>
 
 app.get('/project', (req, res) =>
 {
-    const projectName = req.query.name;
-    const projectObject = projects.searchProject(projectName);
+    const requestedName = req.query.name;
+    const projectObject = projects.searchProject(requestedName);
 
     if(projectObject != null)
     {

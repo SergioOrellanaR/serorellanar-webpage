@@ -1,7 +1,16 @@
 {{#if credits}}
-    credits:
-    {{#each credits}}
-        <img src={{this.icon}} />
-        <h4>{{this.name}}</h4>
-    {{/each}}
+<section class="site-section" id="section-credits">
+    <div class="container">
+        <div class="row">
+            <div class="section-heading text-center col-md-12">
+                <h2>This application <strong>was made by</strong></h2>
+            </div>
+        </div>
+        {{#each credits}}
+        <br>
+        <h3 align="center">{{this.name}}</h3>
+        <i><h5 align="center">{{this.roles}}</h5></i>
+        {{/each}}
+    </div>
+</section>
 {{/if}}

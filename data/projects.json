@@ -67,7 +67,10 @@
 			],
 			"credits":
 			[
-				"Creator, owner and developer: Sergio Orellana Rey"
+				{
+					"name": "Sergio Orellana Rey",
+					"roles": "Creator, owner and developer"
+				}
 			],
 			"gitHubLink": "https://github.com/SergioOrellanaR/serorellanar-webpage"
 		}
@@ -120,7 +123,10 @@
 			],
 			"credits":
 			[
-				"Creator, owner and developer: Sergio Orellana Rey"
+				{
+					"name": "Sergio Orellana Rey",
+					"roles": "Creator, owner and developer"
+				}
 			],
 			"gitHubLink": "https://github.com/SergioOrellanaR/chilemergencias"
 		}
@@ -165,7 +171,10 @@
 			],
 			"credits":
 			[
-				"Creator, owner and developer: Sergio Orellana Rey"
+				{
+					"name": "Sergio Orellana Rey",
+					"roles": "Creator, owner and developer"
+				}
 			],
 			"gitHubLink": "https://github.com/SergioOrellanaR/humankind-Virtue"
 		}
@@ -202,7 +211,10 @@
 			],
 			"credits":
 			[
-				"Creator, owner and developer: Sergio Orellana Rey"
+				{
+					"name": "Sergio Orellana Rey",
+					"roles": "Creator, owner and developer"
+				}
 			],
 			"gitHubLink": "https://github.com/SergioOrellanaR/Oss"
 		}
@@ -271,9 +283,18 @@
 			],
 			"credits":
 			[
-				"Software Architect, Database modeler, C# Backend developer: Sergio Orellana Rey",
-				"Frontend Web developer: Brayan Méndez Fuenzalida",
-				"Desktop Frontend and Backend developer, Database admin: Marco Silva"
+				{
+					"name": "Sergio Orellana Rey",
+					"roles": "Software Architect, Database modeler, C# Backend developer"
+				},
+				{
+					"name": "Brayan Méndez Fuenzalida",
+					"roles": "Frontend web developer"
+				},
+				{
+					"name": "Marco Silva",
+					"roles": "Desktop Frontend and Backend developer, Database admin"
+				}
 			],
 			"gitHubLink": "https://github.com/SergioOrellanaR/Linda-Sonrisa-WebApp-Portafolio-Analista-"
 		}
@@ -317,10 +338,22 @@
 			],
 			"credits":
 			[
-				"Project Manager: Roberto Vargas",
-				"Software Architect: Daniel Soto",
-				"Backend developer: Sergio Orellana Rey",
-				"Backend developer: Brayan Méndez Fuenzalida"
+				{
+					"name": "Roberto Vargas",
+					"roles": "Project Manager"
+				},
+				{
+					"name": "Daniel Soto",
+					"roles": "Software Architect"
+				},
+				{
+					"name": "Sergio Orellana Rey",
+					"roles": "Backend developer"
+				},
+				{
+					"name": "Brayan Méndez Fuenzalida",
+					"roles": "Backend developer"
+				}
 			],
 			"gitHubLink": null
 		}
