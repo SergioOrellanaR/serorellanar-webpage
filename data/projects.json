@@ -166,14 +166,14 @@
 		{
 			"completeName": "HumanKind Virtue",
 			"projectDescription": "HumankindVirtue(2020) is a mobile application that helps players to play easier and faster (when playing on real life) the card game called 'HumanKind', this project borns from the need to play faster and to avoid garbage collecting, this because every game in average 4 disposable carton are lost, so by automation this functionality was replaced with the app. HumanKind Virtue counts with life counter, resource counting and multiple personalization (paid) items. This application is free and doesnt contains ads, it's actually available on Play store and earlier than later on App Store.",
-			"mainImageUrl": "",
+			"mainImageUrl": "images/projects/humankindVirtue/logo.png",
 			"mobileImages": true,
 			"downloadServices": 
 			[
 				{
 					"name": "Google Play",
 					"icon": "https://img.icons8.com/color/100/000000/google-play.png",
-					"url": "https://play.google.com/store/apps/details?id=com.serorellanar.chilemergencias"
+					"url": "https://play.google.com/store/apps/details?id=com.serorellanar.humankindvirtue"
 				}
 			],
 			"platforms": 
@@ -189,8 +189,14 @@
 			],
 			"secondaryImagesUrl": 
 			[
-				"",
-				""
+				"images/projects/humankindVirtue/1.png",
+				"images/projects/humankindVirtue/2.png",
+				"images/projects/humankindVirtue/3.png",
+				"images/projects/humankindVirtue/4.png",
+				"images/projects/humankindVirtue/5.png",
+				"images/projects/humankindVirtue/6.png",
+				"images/projects/humankindVirtue/7.png",
+				"images/projects/humankindVirtue/logo.png"
 			],
 			"usedTechnologies":
 			[
