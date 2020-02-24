@@ -33,18 +33,6 @@ hbs.registerPartials( __dirname + '/view/partials');
 
 app.set('view engine', 'hbs');
 
-
-
-app.get('/.well-known/acme-challenge/evDTuxFaI75QplyEVxa25IP--g1QvyRdHz4986LfRJw', (req, res) =>
-{
-    res.send("evDTuxFaI75QplyEVxa25IP--g1QvyRdHz4986LfRJw.0_v5vkNoSP5tNj2fGhTwY70NBj5ekYz6mYXnGnj50IQ");
-});
-
-app.get('/.well-known/acme-challenge/KpChJ_90Nh3o_ByCDlpUIXLlr7lyMUpbzIo94BJ1OyE', (req, res) =>
-{
-    res.send("KpChJ_90Nh3o_ByCDlpUIXLlr7lyMUpbzIo94BJ1OyE.0_v5vkNoSP5tNj2fGhTwY70NBj5ekYz6mYXnGnj50IQ");
-});
-
 app.get('/', (req, res) =>
 {
     res.render('index');
@@ -84,17 +72,17 @@ app.get('*', function(req, res){
 });
 
 const options = {
-    key: fs.readFileSync('cert/privatekey.pem'),
-    cert: fs.readFileSync('cert/certificate.pem')
+    key: fs.readFileSync('cert/private.key'),
+    cert: fs.readFileSync('cert/certificate.crt')
 };
 
 const server = https.createServer(options, app);
 
-// server.listen(port, () => {
-//     console.log("Listening on port " + port );
-//   });
+server.listen(port, () => {
+    console.log("Listening on port " + port );
+  });
 
 
-app.listen(port, () => {
-    console.log('Listening on port:',port);
-})
+// app.listen(port, () => {
+//     console.log('Listening on port:',port);
+// })
