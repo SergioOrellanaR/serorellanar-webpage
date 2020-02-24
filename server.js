@@ -35,6 +35,16 @@ app.set('view engine', 'hbs');
 
 
 
+app.get('/.well-known/acme-challenge/wjCAEBo3_-rZ67exMZAGJCh3DamhYT6xmgtZeaB7GeE', (req, res) =>
+{
+    res.send("wjCAEBo3_-rZ67exMZAGJCh3DamhYT6xmgtZeaB7GeE.0_v5vkNoSP5tNj2fGhTwY70NBj5ekYz6mYXnGnj50IQ");
+});
+
+app.get('/.well-known/acme-challenge/zT3pC-t_jYyRWeqbWhf-5UqUAQ-PGgZNHpeQTD__tFo', (req, res) =>
+{
+    res.send("zT3pC-t_jYyRWeqbWhf-5UqUAQ-PGgZNHpeQTD__tFo.0_v5vkNoSP5tNj2fGhTwY70NBj5ekYz6mYXnGnj50IQ");
+});
+
 app.get('/', (req, res) =>
 {
     res.render('index');
