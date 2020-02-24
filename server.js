@@ -1,6 +1,8 @@
 const express = require('express');
 const hbs = require('hbs');
 var path = require('path');
+var fs = require('fs');
+var https = require('https');
 require('./hbs/helpers');
 const projects = require('./controllers/projectController');
 
@@ -14,7 +16,7 @@ function getPort()
     //Si es producción vs dev
     if(process.env.PWD === '/home/workspace/serorellanar-webpage')
     {
-        return 80;
+        return 443;
     }
     else
     {
@@ -71,7 +73,18 @@ app.get('*', function(req, res){
     res.render('error');
 });
 
+const options = {
+    key: fs.readFileSync('cert/privatekey.pem'),
+    cert: fs.readFileSync('cert/certificate.pem')
+};
 
-app.listen(port, () => {
-    console.log('Listening on port:',port);
-})
+const server = https.createServer(options, app);
+
+server.listen(port, () => {
+    console.log("Listening on port " + port );
+  });
+
+
+// app.listen(port, () => {
+//     console.log('Listening on port:',port);
+// })
