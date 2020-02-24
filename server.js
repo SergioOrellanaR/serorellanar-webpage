@@ -35,14 +35,14 @@ app.set('view engine', 'hbs');
 
 
 
-app.get('/.well-known/acme-challenge/wjCAEBo3_-rZ67exMZAGJCh3DamhYT6xmgtZeaB7GeE', (req, res) =>
+app.get('/.well-known/acme-challenge/evDTuxFaI75QplyEVxa25IP--g1QvyRdHz4986LfRJw', (req, res) =>
 {
-    res.send("wjCAEBo3_-rZ67exMZAGJCh3DamhYT6xmgtZeaB7GeE.0_v5vkNoSP5tNj2fGhTwY70NBj5ekYz6mYXnGnj50IQ");
+    res.send("evDTuxFaI75QplyEVxa25IP--g1QvyRdHz4986LfRJw.0_v5vkNoSP5tNj2fGhTwY70NBj5ekYz6mYXnGnj50IQ");
 });
 
-app.get('/.well-known/acme-challenge/zT3pC-t_jYyRWeqbWhf-5UqUAQ-PGgZNHpeQTD__tFo', (req, res) =>
+app.get('/.well-known/acme-challenge/KpChJ_90Nh3o_ByCDlpUIXLlr7lyMUpbzIo94BJ1OyE', (req, res) =>
 {
-    res.send("zT3pC-t_jYyRWeqbWhf-5UqUAQ-PGgZNHpeQTD__tFo.0_v5vkNoSP5tNj2fGhTwY70NBj5ekYz6mYXnGnj50IQ");
+    res.send("KpChJ_90Nh3o_ByCDlpUIXLlr7lyMUpbzIo94BJ1OyE.0_v5vkNoSP5tNj2fGhTwY70NBj5ekYz6mYXnGnj50IQ");
 });
 
 app.get('/', (req, res) =>
