@@ -9,14 +9,15 @@ const projects = require('./controllers/projectController');
 const app = express();
 
 //dev vs production
-const port = getPort();
+const httpsPort = 443;
+const httpPort = getHttpPort();
 
-function getPort()
+function getHttpPort()
 {
     //Si es producción vs dev
-    if(process.env.PWD === '/home/workspace/serorellanar-webpage')
+    if (process.env.PWD === '/home/workspace/serorellanar-webpage')
     {
-        return 443;
+        return 80;
     }
     else
     {
@@ -24,12 +25,12 @@ function getPort()
     }
 }
 
-app.use(express.static( __dirname + '/view'));
+app.use(express.static(__dirname + '/view'));
 app.set('env development');
 //View es un customfolder en hbs (En vez de "views")
 app.set('views', path.join(__dirname, '/view'));
 
-hbs.registerPartials( __dirname + '/view/partials');
+hbs.registerPartials(__dirname + '/view/partials');
 
 app.set('view engine', 'hbs');
 
@@ -43,7 +44,7 @@ app.get('/project', (req, res) =>
     const requestedName = req.query.name;
     const projectObject = projects.searchProject(requestedName);
 
-    if(projectObject != null)
+    if (projectObject != null)
     {
         const projectName = projectObject.projectName;
         const projectInformation = projectObject.projectInformation;
@@ -67,7 +68,8 @@ app.get('/project', (req, res) =>
     }
 });
 
-app.get('*', function(req, res){
+app.get('*', function (req, res)
+{
     res.render('error');
 });
 
@@ -78,11 +80,12 @@ const options = {
 
 const server = https.createServer(options, app);
 
-server.listen(port, () => {
-    console.log("Listening on port " + port );
-  });
+server.listen(httpsPort, () =>
+{
+    console.log("https listening on port:", httpsPort);
+});
 
-
-// app.listen(port, () => {
-//     console.log('Listening on port:',port);
-// })
+app.listen(httpPort, () =>
+{
+    console.log('http listening on port:', httpPort);
+})
