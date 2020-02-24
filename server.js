@@ -16,7 +16,7 @@ function getPort()
     //Si es producción vs dev
     if(process.env.PWD === '/home/workspace/serorellanar-webpage')
     {
-        return 443;
+        return 80;
     }
     else
     {
@@ -80,11 +80,11 @@ const options = {
 
 const server = https.createServer(options, app);
 
-server.listen(port, () => {
-    console.log("Listening on port " + port );
-  });
+// server.listen(port, () => {
+//     console.log("Listening on port " + port );
+//   });
 
 
-// app.listen(port, () => {
-//     console.log('Listening on port:',port);
-// })
+app.listen(port, () => {
+    console.log('Listening on port:',port);
+})
