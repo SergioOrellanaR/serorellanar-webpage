@@ -3,6 +3,7 @@ const hbs = require('hbs');
 var path = require('path');
 var fs = require('fs');
 var https = require('https');
+var http = require('http');
 require('./hbs/helpers');
 const projects = require('./controllers/projectController');
 
@@ -85,7 +86,8 @@ server.listen(httpsPort, () =>
     console.log("https listening on port:", httpsPort);
 });
 
-app.listen(httpPort, () =>
-{
-    console.log('http listening on port:', httpPort);
-})
+//redirect to https
+http.createServer(function (req, res) {
+    res.writeHead(301, { "Location": "https://" + req.headers['host'] + req.url });
+    res.end();
+}).listen(80);
