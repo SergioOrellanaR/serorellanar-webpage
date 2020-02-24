@@ -14,7 +14,7 @@ function getPort()
     //Si es producción vs dev
     if(process.env.PWD === '/home/workspace/serorellanar-webpage')
     {
-        return 80;
+        return 443;
     }
     else
     {
