@@ -10,21 +10,10 @@ const projects = require('./controllers/projectController');
 const app = express();
 
 //dev vs production
+const env = process.env.PWD === '/home/workspace/serorellanar-webpage' ? 'prod' : 'dev';
 const httpsPort = 443;
-const httpPort = getHttpPort();
+const httpPort = env === 'dev' ? 3000 : 80;
 
-function getHttpPort()
-{
-    //Si es producción vs dev
-    if (process.env.PWD === '/home/workspace/serorellanar-webpage')
-    {
-        return 80;
-    }
-    else
-    {
-        return 3000;
-    }
-}
 
 app.use(express.static(__dirname + '/view'));
 app.set('env development');
@@ -34,6 +23,18 @@ app.set('views', path.join(__dirname, '/view'));
 hbs.registerPartials(__dirname + '/view/partials');
 
 app.set('view engine', 'hbs');
+
+/////FACE RECOGNIZER API//////
+const fnRestPath = (env === 'dev' ? '../AWS Rekognition RESTServer' : '../Face-Recognizer-REST-Server');
+const fnRoutesPath = (fnRestPath+'/routes/routes.js');
+const fnRoutes = require(fnRoutesPath);
+var frApiRouter = express.Router();
+app.use('/rest/recognizerApi', frApiRouter);
+frApiRouter.use(fnRoutes);
+
+const fnImagesPath = (fnRestPath+'/images');
+frApiRouter.use(express.static(fnImagesPath));
+//////////////////////////////
 
 app.get('/', (req, res) =>
 {
@@ -90,4 +91,4 @@ server.listen(httpsPort, () =>
 http.createServer(function (req, res) {
     res.writeHead(301, { "Location": "https://" + req.headers['host'] + req.url });
     res.end();
-}).listen(80);
+}).listen(httpPort);
