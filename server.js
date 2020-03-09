@@ -1,5 +1,6 @@
 const env = process.env.PWD === '/home/workspace/serorellanar-webpage' ? 'prod' : 'dev';
-process.env.FN_REST_PATH = (env === 'dev' ? '../AWS Rekognition RESTServer' : '../Face-Recognizer-REST-Server');
+process.env.FN_REST_PATH = './Recognizer-Api-Rest';
+
 require(process.env.FN_REST_PATH+'/config/config');
 const express = require('express');
 const hbs = require('hbs');

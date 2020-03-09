@@ -1,3 +1,5 @@
 node_modules/
 .history/
 cert/
+Recognizer-Api-Rest/images
+Recognizer-Api-Rest/config/dbInformation.js
