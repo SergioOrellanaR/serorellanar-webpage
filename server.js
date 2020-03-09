@@ -6,6 +6,7 @@ var https = require('https');
 var http = require('http');
 require('./hbs/helpers');
 const projects = require('./controllers/projectController');
+const mongoose = require('mongoose');
 
 const app = express();
 
@@ -28,12 +29,35 @@ app.set('view engine', 'hbs');
 process.env.FN_REST_PATH = (env === 'dev' ? '../AWS Rekognition RESTServer' : '../Face-Recognizer-REST-Server');
 const fnRoutesPath = (process.env.FN_REST_PATH + '/routes/routes.js');
 const fnRoutes = require(fnRoutesPath);
+
 var frApiRouter = express.Router();
 app.use('/rest/recognizerApi', frApiRouter);
 frApiRouter.use(fnRoutes);
 
 const fnImagesPath = (process.env.FN_REST_PATH + '/images');
 frApiRouter.use(express.static(fnImagesPath));
+
+
+//////////////////////////////
+
+////Mongoose Api Connection///
+let connectionOptions = {
+    useCreateIndex: true,
+    useNewUrlParser: true,
+    useUnifiedTopology:true,
+    useFindAndModify: false
+};
+
+mongoose.connect('mongodb://localhost:27017/face-recognizer', connectionOptions, (err, res) => {
+    if (err)
+    {
+        throw err;
+    }
+    else
+    {
+        console.log('Base de datos online!!');
+    }
+});
 //////////////////////////////
 
 app.get('/', (req, res) =>
