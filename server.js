@@ -25,14 +25,14 @@ hbs.registerPartials(__dirname + '/view/partials');
 app.set('view engine', 'hbs');
 
 /////FACE RECOGNIZER API//////
-const fnRestPath = (env === 'dev' ? '../AWS Rekognition RESTServer' : '../Face-Recognizer-REST-Server');
-const fnRoutesPath = (fnRestPath + '/routes/routes.js');
+process.env.FN_REST_PATH = (env === 'dev' ? '../AWS Rekognition RESTServer' : '../Face-Recognizer-REST-Server');
+const fnRoutesPath = (process.env.FN_REST_PATH + '/routes/routes.js');
 const fnRoutes = require(fnRoutesPath);
 var frApiRouter = express.Router();
 app.use('/rest/recognizerApi', frApiRouter);
 frApiRouter.use(fnRoutes);
 
-const fnImagesPath = (fnRestPath + '/images');
+const fnImagesPath = (process.env.FN_REST_PATH + '/images');
 frApiRouter.use(express.static(fnImagesPath));
 //////////////////////////////
 
@@ -75,12 +75,7 @@ app.get('*', function (req, res)
     res.render('error');
 });
 
-const options = {
-    key: fs.readFileSync('../cert/private.key'),
-    cert: fs.readFileSync('../cert/certificate.crt')
-};
 
-const server = https.createServer(options, app);
 
 if (env === 'dev')
 {
@@ -91,6 +86,13 @@ if (env === 'dev')
 }
 else
 {
+    const options = {
+        key: fs.readFileSync('../cert/private.key'),
+        cert: fs.readFileSync('../cert/certificate.crt')
+    };
+    
+    const server = https.createServer(options, app);
+
     server.listen(httpsPort, () =>
     {
         console.log("https listening on port:", httpsPort);
