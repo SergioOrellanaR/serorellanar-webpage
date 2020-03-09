@@ -26,13 +26,13 @@ app.set('view engine', 'hbs');
 
 /////FACE RECOGNIZER API//////
 const fnRestPath = (env === 'dev' ? '../AWS Rekognition RESTServer' : '../Face-Recognizer-REST-Server');
-const fnRoutesPath = (fnRestPath+'/routes/routes.js');
+const fnRoutesPath = (fnRestPath + '/routes/routes.js');
 const fnRoutes = require(fnRoutesPath);
 var frApiRouter = express.Router();
 app.use('/rest/recognizerApi', frApiRouter);
 frApiRouter.use(fnRoutes);
 
-const fnImagesPath = (fnRestPath+'/images');
+const fnImagesPath = (fnRestPath + '/images');
 frApiRouter.use(express.static(fnImagesPath));
 //////////////////////////////
 
@@ -82,13 +82,26 @@ const options = {
 
 const server = https.createServer(options, app);
 
-server.listen(httpsPort, () =>
+if (env === 'dev')
 {
-    console.log("https listening on port:", httpsPort);
-});
+    app.listen(httpPort, () =>
+    {
+        console.log(`Escuchando en puerto: ${httpPort}`);
+    })
+}
+else
+{
+    server.listen(httpsPort, () =>
+    {
+        console.log("https listening on port:", httpsPort);
+    });
 
-//redirect to https
-http.createServer(function (req, res) {
-    res.writeHead(301, { "Location": "https://" + req.headers['host'] + req.url });
-    res.end();
-}).listen(httpPort);
+    //redirect to https
+    http.createServer(function (req, res)
+    {
+        res.writeHead(301, { "Location": "https://" + req.headers['host'] + req.url });
+        res.end();
+    }).listen(httpPort);
+}
+
+
