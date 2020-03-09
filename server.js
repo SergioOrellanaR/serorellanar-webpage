@@ -76,8 +76,8 @@ app.get('*', function (req, res)
 });
 
 const options = {
-    key: fs.readFileSync('cert/private.key'),
-    cert: fs.readFileSync('cert/certificate.crt')
+    key: fs.readFileSync('../cert/private.key'),
+    cert: fs.readFileSync('../cert/certificate.crt')
 };
 
 const server = https.createServer(options, app);
