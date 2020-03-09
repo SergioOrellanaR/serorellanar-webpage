@@ -1,3 +1,6 @@
+const env = process.env.PWD === '/home/workspace/serorellanar-webpage' ? 'prod' : 'dev';
+process.env.FN_REST_PATH = (env === 'dev' ? '../AWS Rekognition RESTServer' : '../Face-Recognizer-REST-Server');
+require(process.env.FN_REST_PATH+'/config/config');
 const express = require('express');
 const hbs = require('hbs');
 var path = require('path');
@@ -8,10 +11,11 @@ require('./hbs/helpers');
 const projects = require('./controllers/projectController');
 const mongoose = require('mongoose');
 
+
+require(process.env.FN_REST_PATH+'/config/config');
 const app = express();
 
 //dev vs production
-const env = process.env.PWD === '/home/workspace/serorellanar-webpage' ? 'prod' : 'dev';
 const httpsPort = 443;
 const httpPort = env === 'dev' ? 3000 : 80;
 
@@ -26,7 +30,6 @@ hbs.registerPartials(__dirname + '/view/partials');
 app.set('view engine', 'hbs');
 
 /////FACE RECOGNIZER API//////
-process.env.FN_REST_PATH = (env === 'dev' ? '../AWS Rekognition RESTServer' : '../Face-Recognizer-REST-Server');
 const fnRoutesPath = (process.env.FN_REST_PATH + '/routes/routes.js');
 const fnRoutes = require(fnRoutesPath);
 
@@ -48,7 +51,7 @@ let connectionOptions = {
     useFindAndModify: false
 };
 
-mongoose.connect('mongodb://localhost:27017/face-recognizer', connectionOptions, (err, res) => {
+mongoose.connect(process.env.URLDB, connectionOptions, (err, res) => {
     if (err)
     {
         throw err;
@@ -129,5 +132,7 @@ else
         res.end();
     }).listen(httpPort);
 }
+
+
 
 
